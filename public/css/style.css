@@ -70,3 +70,18 @@ form button {
     border-radius: 4px;
     cursor: pointer;
 }
+
+
+
+.offre-details p {
+
+}
+.offre-details span {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    color: #333;
+}

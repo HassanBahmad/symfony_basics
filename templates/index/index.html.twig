@@ -6,14 +6,14 @@
 
     <div class="home">
         <div class="offres">
-
+            {% for offre in offres %}
+                {{ include('partials/_offre_item.html.twig', {item: offre}) }}
+            {% endfor %}
         </div>
-        <div>
-            {{ form_start(form) }}
-            {{ form_rest(form) }}
-            <button type="submit"> Add </button>
-            {{ form_end(form) }}
-        </div>
+        {{ form_start(form) }}
+        {{ form_rest(form) }}
+        <button type="submit"> Add </button>
+        {{ form_end(form) }}
     </div>
 
 {% endblock %}

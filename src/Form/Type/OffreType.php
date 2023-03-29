@@ -2,7 +2,7 @@
 
 namespace App\Form\Type;
 
-use App\Model\OffreForm;
+use App\Entity\Offre;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -24,7 +24,7 @@ class OffreType extends AbstractType
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            'data_class' => OffreForm::class,
+            'data_class' => Offre::class,
         ]);
     }
 }
